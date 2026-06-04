@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNRIMANCE — Performance Agency</title>
-<meta name="description" content="현장을 아는 퍼포먼스 에이전시. 케어팀 현장 동행, 빠른 견적 회신.">
+<meta name="description" content="원하는 퍼포머를 바로 찾아드립니다. UNRIMANCE 퍼포먼스 에이전시.">
 <meta property="og:title" content="UNRIMANCE — Performance Agency">
-<meta property="og:description" content="Artist for Artist. 검증된 퍼포머, 케어링 현장 동행.">
+<meta property="og:description" content="원하는 퍼포머를 바로 찾아드립니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500&family=Noto+Serif+KR:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -23,34 +23,34 @@ html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--off);color:var(--text);overflow-x:hidden;}
 
 /* NAV */
-.nav{position:sticky;top:0;z-index:100;background:rgba(250,250,247,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0;height:52px;}
-.nav-logo{padding:0 20px;border-right:1px solid var(--border);display:flex;align-items:center;gap:12px;height:100%;text-decoration:none;cursor:pointer;}
+.nav{position:sticky;top:0;z-index:100;background:rgba(250,250,247,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0;height:52px;}
+.nav-logo{padding:0 20px;border-right:1px solid var(--border);display:flex;align-items:center;gap:12px;height:100%;text-decoration:none;}
 .nav-logo-text{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:400;letter-spacing:4px;text-transform:uppercase;color:var(--text);}
 .nav-tag{font-size:9px;letter-spacing:3px;color:var(--sub);text-transform:uppercase;font-weight:300;}
 .nav-spacer{flex:1;}
 .nav-tabs{display:flex;height:100%;}
 .nav-tab{font-size:10px;font-weight:400;letter-spacing:2px;text-transform:uppercase;padding:0 22px;border:none;border-left:1px solid var(--border);background:transparent;color:var(--sub);cursor:pointer;transition:all .15s;font-family:'DM Sans',sans-serif;height:100%;display:flex;align-items:center;text-decoration:none;}
 .nav-tab:hover{color:var(--text);background:rgba(0,0,0,0.03);}
-.nav-tab.active{background:var(--text);color:#fff;}
+.nav-tab.cta{background:var(--text);color:#fff;}
+.nav-tab.cta:hover{opacity:.8;background:var(--text);}
 
-/* HERO */
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border);}
-.hero-left{padding:120px 52px 80px;display:flex;flex-direction:column;justify-content:flex-end;border-right:1px solid var(--border);}
-.hero-eyebrow{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--sub);font-weight:300;margin-bottom:28px;}
-.hero-brand{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,7vw,96px);font-weight:300;line-height:0.9;letter-spacing:-3px;color:var(--text);margin-bottom:36px;}
-.hero-desc{font-size:13px;font-weight:300;color:var(--sub);line-height:2.2;font-family:'Noto Serif KR',serif;margin-bottom:48px;max-width:360px;}
-.hero-actions{display:flex;gap:12px;align-items:center;}
-.btn-primary{font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:14px 32px;background:var(--text);color:#fff;text-decoration:none;border-radius:2px;transition:opacity .15s;font-weight:400;display:inline-block;}
-.btn-primary:hover{opacity:.75;}
-.btn-ghost{font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:14px 32px;border:1px solid var(--border);color:var(--text);text-decoration:none;border-radius:2px;transition:all .15s;font-weight:300;display:inline-block;}
-.btn-ghost:hover{border-color:var(--text);}
+/* HERO - 풀스크린 다크 */
+.hero{min-height:100vh;background:var(--text);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 52px;position:relative;overflow:hidden;}
+.hero-line-v{position:absolute;width:1px;background:rgba(255,255,255,0.06);top:0;bottom:0;}
+.hero-line-v.l1{left:52px;}
+.hero-line-v.l2{right:52px;}
+.hero-eyebrow{font-size:9px;letter-spacing:6px;text-transform:uppercase;color:rgba(255,255,255,0.35);font-weight:300;margin-bottom:40px;}
+.hero-main{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,8vw,120px);font-weight:300;line-height:1.0;letter-spacing:-3px;color:#fff;margin-bottom:16px;}
+.hero-main em{font-style:italic;color:rgba(255,255,255,0.45);}
+.hero-sub{font-size:13px;font-weight:300;color:rgba(255,255,255,0.45);line-height:2;font-family:'Noto Serif KR',serif;margin-bottom:56px;}
+.hero-artist{font-family:'Cormorant Garamond',serif;font-size:clamp(14px,2vw,18px);font-style:italic;font-weight:300;color:rgba(255,255,255,0.2);letter-spacing:2px;margin-bottom:56px;}
+.hero-actions{display:flex;gap:16px;align-items:center;justify-content:center;}
+.btn-white{font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:16px 40px;background:#fff;color:var(--text);text-decoration:none;border-radius:2px;transition:opacity .15s;font-weight:500;display:inline-block;}
+.btn-white:hover{opacity:.85;}
+.btn-outline{font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:16px 36px;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.6);text-decoration:none;border-radius:2px;transition:all .15s;font-weight:300;display:inline-block;}
+.btn-outline:hover{border-color:rgba(255,255,255,0.6);color:#fff;}
 
-.hero-right{padding:120px 52px 80px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--bg);}
-.hero-slogan{font-family:'Cormorant Garamond',serif;font-size:clamp(64px,9vw,128px);font-weight:300;line-height:0.88;letter-spacing:-4px;color:var(--text);}
-.hero-slogan em{font-style:italic;color:var(--rose);}
-.hero-slogan-sub{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--sub);font-weight:300;margin-top:28px;}
-
-/* STRIP - 약속 3가지 */
+/* STRIP */
 .strip{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--border);}
 .strip-item{padding:36px 40px;border-right:1px solid var(--border);display:flex;align-items:flex-start;gap:20px;}
 .strip-item:last-child{border-right:none;}
@@ -60,10 +60,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--off);color:var(--text);ov
 .strip-desc{font-size:12px;font-weight:300;color:var(--sub);font-family:'Noto Serif KR',serif;line-height:1.8;}
 
 /* MARQUEE */
-.marquee-wrap{overflow:hidden;border-bottom:1px solid var(--border);background:var(--text);padding:14px 0;}
+.marquee-wrap{overflow:hidden;border-bottom:1px solid var(--border);background:var(--bg);padding:14px 0;}
 .marquee-track{display:flex;white-space:nowrap;animation:marquee 28s linear infinite;}
-.marquee-item{font-size:8.5px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.35);font-weight:300;padding:0 36px;border-right:1px solid rgba(255,255,255,0.1);}
-.marquee-item span{color:rgba(255,255,255,0.8);}
+.marquee-item{font-size:8.5px;letter-spacing:4px;text-transform:uppercase;color:var(--sub);font-weight:300;padding:0 36px;border-right:1px solid var(--border);}
+.marquee-item span{color:var(--text);}
 @keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
 /* WHY */
@@ -73,7 +73,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--off);color:var(--text);ov
 .why-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5vw,68px);font-weight:300;line-height:1.05;letter-spacing:-2px;color:var(--text);margin-bottom:32px;}
 .why-title em{font-style:italic;}
 .why-body{font-size:13px;font-weight:300;color:var(--sub);line-height:2.2;font-family:'Noto Serif KR',serif;}
-.why-right{padding:100px 52px;background:var(--bg);display:flex;flex-direction:column;justify-content:center;gap:0;}
+.why-right{padding:100px 52px;background:var(--bg);display:flex;flex-direction:column;justify-content:center;}
 .why-point{padding:32px 0;border-bottom:1px solid var(--border);}
 .why-point:last-child{border-bottom:none;}
 .why-point-num{font-size:9px;letter-spacing:3px;color:var(--sub);font-weight:300;margin-bottom:10px;}
@@ -81,13 +81,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--off);color:var(--text);ov
 .why-point-desc{font-size:12px;font-weight:300;color:var(--sub);line-height:1.9;font-family:'Noto Serif KR',serif;}
 
 /* CATALOG CTA */
-.cat-cta{padding:120px 52px;text-align:center;background:var(--text);border-bottom:1px solid var(--border);}
-.cat-cta-eyebrow{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,0.35);font-weight:300;margin-bottom:20px;}
-.cat-cta-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:300;line-height:0.9;letter-spacing:-3px;color:#fff;margin-bottom:20px;}
-.cat-cta-title em{font-style:italic;color:rgba(255,255,255,0.45);}
-.cat-cta-sub{font-size:13px;font-weight:300;color:rgba(255,255,255,0.45);line-height:2;font-family:'Noto Serif KR',serif;margin-bottom:48px;}
-.btn-white{font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:16px 40px;background:#fff;color:var(--text);text-decoration:none;border-radius:2px;transition:opacity .15s;font-weight:500;display:inline-block;}
-.btn-white:hover{opacity:.8;}
+.cat-cta{padding:120px 52px;text-align:center;background:var(--off);border-bottom:1px solid var(--border);}
+.cat-cta-eyebrow{font-size:9px;letter-spacing:5px;text-transform:uppercase;color:var(--sub);font-weight:300;margin-bottom:20px;}
+.cat-cta-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:300;line-height:0.9;letter-spacing:-3px;color:var(--text);margin-bottom:20px;}
+.cat-cta-title em{font-style:italic;color:var(--rose);}
+.cat-cta-sub{font-size:13px;font-weight:300;color:var(--sub);line-height:2;font-family:'Noto Serif KR',serif;margin-bottom:48px;}
+.btn-dark{font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:16px 40px;background:var(--text);color:#fff;text-decoration:none;border-radius:2px;transition:opacity .15s;font-weight:500;display:inline-block;}
+.btn-dark:hover{opacity:.75;}
 
 /* FOOTER */
 footer{padding:40px 52px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
@@ -100,7 +100,6 @@ footer{padding:40px 52px;border-top:1px solid var(--border);display:flex;justify
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <a class="nav-logo" href="/">
     <span class="nav-logo-text">Unrimance</span>
@@ -109,31 +108,32 @@ footer{padding:40px 52px;border-top:1px solid var(--border);display:flex;justify
   <div class="nav-spacer"></div>
   <div class="nav-tabs">
     <a href="#why" class="nav-tab">About</a>
-    <a href="/catalog/" class="nav-tab active">Catalog</a>
+    <a href="/catalog/" class="nav-tab cta">Catalog</a>
     <a href="mailto:unrimancemgm@gmail.com" class="nav-tab">Contact</a>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO - 다크 풀스크린 -->
 <section class="hero">
-  <div class="hero-left">
-    <div class="hero-eyebrow">Performance Agency · Seoul</div>
-    <div class="hero-brand">UNRIMANCE</div>
-    <p class="hero-desc">현장을 아는 퍼포먼스 에이전시.<br>
-    다인원 현장에는 케어팀이 동행합니다.<br>
-    소규모는 온라인 케어로 신속하게 대응합니다.</p>
-    <div class="hero-actions">
-      <a href="/catalog/" class="btn-primary">Talent Catalog</a>
-      <a href="mailto:unrimancemgm@gmail.com" class="btn-ghost">캐스팅 문의</a>
-    </div>
+  <div class="hero-line-v l1"></div>
+  <div class="hero-line-v l2"></div>
+  <div class="hero-eyebrow">Performance Agency · Seoul · 2026</div>
+  <div class="hero-main">
+    원하는 퍼포머,<br>
+    <em>바로 찾아드립니다.</em>
   </div>
-  <div class="hero-right">
-    <div class="hero-slogan">Artist<br>for<br><em>Artist.</em></div>
-    <div class="hero-slogan-sub">Dancer · Actor · Influencer</div>
+  <div class="hero-artist">— Artist for Artist —</div>
+  <p class="hero-sub">
+    댄서 · 배우 · 인플루언서<br>
+    다인원 현장엔 케어팀 동행. 소규모는 온라인 케어로 신속하게.
+  </p>
+  <div class="hero-actions">
+    <a href="/catalog/" class="btn-white">Talent Catalog →</a>
+    <a href="mailto:unrimancemgm@gmail.com" class="btn-outline">캐스팅 문의</a>
   </div>
 </section>
 
-<!-- 약속 스트립 -->
+<!-- STRIP -->
 <div class="strip">
   <div class="strip-item">
     <div class="strip-num">I</div>
@@ -158,7 +158,7 @@ footer{padding:40px 52px;border-top:1px solid var(--border);display:flex;justify
   </div>
 </div>
 
-<!-- 마퀴 -->
+<!-- MARQUEE -->
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span class="marquee-item"><span>Dancer</span> · Casting</span>
@@ -193,7 +193,7 @@ footer{padding:40px 52px;border-top:1px solid var(--border);display:flex;justify
     <div class="why-point">
       <div class="why-point-num">02</div>
       <div class="why-point-title">On-site Care</div>
-      <div class="why-point-desc">다인원 현장엔 케어팀이 동행합니다. 소규모는 온라인 케어로 신속하게 대응합니다.</div>
+      <div class="why-point-desc">다인원 현장엔 케어팀이 동행합니다. 소규모는 온라인 케어로 신속하게.</div>
     </div>
     <div class="why-point">
       <div class="why-point-num">03</div>
@@ -211,9 +211,9 @@ footer{padding:40px 52px;border-top:1px solid var(--border);display:flex;justify
 <!-- CATALOG CTA -->
 <section class="cat-cta">
   <div class="cat-cta-eyebrow">Talent Catalog</div>
-  <div class="cat-cta-title">찾고 있는<br><em>퍼포머,</em><br>여기 있어요.</div>
-  <p class="cat-cta-sub">댄서 · 배우 · 인플루언서<br>장르와 비주얼 조건으로 필터링해서 바로 찾아보세요.</p>
-  <a href="/catalog/" class="btn-white">Catalog 입장 →</a>
+  <div class="cat-cta-title">지금 바로<br><em>찾아보세요.</em></div>
+  <p class="cat-cta-sub">댄서 · 배우 · 인플루언서<br>장르와 비주얼 조건으로 필터링해서 원하는 퍼포머를 찾아보세요.</p>
+  <a href="/catalog/" class="btn-dark">Catalog 입장 →</a>
 </section>
 
 <!-- FOOTER -->
